@@ -16,7 +16,9 @@ const unwatchedMovies = movies.filter((el) => !el.watched);
 const bestGradeMovies = movies.filter((el) => el.rating > 8.0);
 
 const getAvgRating = (movies: Movies) =>
-  (movies.reduce((sum, m) => sum + m.rating, 0) / movies.length).toFixed(2);
+  (movies.reduce((acc, { rating }) => acc + rating, 0) / movies.length).toFixed(
+    2,
+  );
 
 console.log(
   'Nieobejrzane filmy:',
@@ -24,7 +26,7 @@ console.log(
 );
 
 console.log(
-  'Ocena > 8:',
+  'Ocena > 8.0:',
   bestGradeMovies.map(({ title }) => title),
 );
 
