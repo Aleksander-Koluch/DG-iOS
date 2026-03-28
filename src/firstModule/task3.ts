@@ -19,4 +19,4 @@ const upperCaseProducts = shoppingList.map((el) =>
 );
 console.log(upperCaseProducts);
 
-console.log(upperCaseProducts.sort((a, b) => a.localeCompare(b)));
+console.log(upperCaseProducts.sort());
