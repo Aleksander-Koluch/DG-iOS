@@ -5,10 +5,10 @@ function createDayPlan(name: string, tasks: string[] = ['umycie samochodu']) {
 
   const additionalMessage =
     tasks.length > 2 ? 'Gratulacje, ambitnie.' : 'Zrób coś jeszcze ok';
-  console.log(
-    `Nazywasz się ${name} i Twój plan na dziś to: ${joinedTasks}. ${additionalMessage}`,
-  );
+
+  return `Nazywasz się ${name} i Twój plan na dziś to: ${joinedTasks}. ${additionalMessage}`;
 }
 
-createDayPlan('Tadeusz Kubica', tasks);
-createDayPlan('Tadeusz Kubica');
+console.log(createDayPlan('Tadeusz Kubica', tasks));
+
+console.log(createDayPlan('Tadeusz Kubica'));
