@@ -26,7 +26,7 @@ const summarizeCart = (cartTable: CartItem[]) => {
   );
 
   const totalWithoutDiscount = itemsWithTotal.reduce(
-    (sum, item) => sum + item.total,
+    (acc, { total }) => sum + total,
     0,
   );
 

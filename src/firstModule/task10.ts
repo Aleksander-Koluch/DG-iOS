@@ -5,9 +5,12 @@ const activities = [
   { type: 'siłownia', minutes: 60, calories: 450 },
 ];
 
-const totalMinutes = activities.reduce((sum, a) => sum + a.minutes, 0);
-const totalCalories = activities.reduce((sum, a) => sum + a.calories, 0);
-const longActivities = activities.filter((a) => a.minutes > 30);
+const totalMinutes = activities.reduce((sum, { minutes }) => sum + minutes, 0);
+const totalCalories = activities.reduce(
+  (sum, { calories }) => sum + calories,
+  0,
+);
+const longActivities = activities.filter(({ minutes }) => minutes > 30);
 
 const avgTime = totalMinutes / activities.length;
 

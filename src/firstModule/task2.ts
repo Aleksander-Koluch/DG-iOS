@@ -1,6 +1,6 @@
 const expenses = [18.5, 42, 9.99, 27, 61.3, 15, 33.5];
 
-const sum = expenses.reduce((sum, value) => sum + value, 0);
+const sum = expenses.reduce((acc, value) => acc + value, 0);
 const avg = sum / expenses.length;
 const highest = Math.max(...expenses);
 
