@@ -5,9 +5,9 @@ const activities = [
   { type: 'siłownia', minutes: 60, calories: 450 },
 ];
 
-const totalMinutes = activities.reduce((sum, { minutes }) => sum + minutes, 0);
+const totalMinutes = activities.reduce((acc, { minutes }) => acc + minutes, 0);
 const totalCalories = activities.reduce(
-  (sum, { calories }) => sum + calories,
+  (acc, { calories }) => acc + calories,
   0,
 );
 const longActivities = activities.filter(({ minutes }) => minutes > 30);
