@@ -18,7 +18,7 @@ async function getWeather(
     const data = await res.json();
 
     console.log(`
-Temperatura: ${data.current.temperature_2m}°C
+Temperatura: ${data.current.temperature_2m}*C
 Prędkość wiatru: ${data.current.wind_speed_10m} m/s
 `);
   } catch (e: any) {
