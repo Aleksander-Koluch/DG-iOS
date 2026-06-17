@@ -1,0 +1,43 @@
+export const EVENTS_DATA = [
+  {
+    id: '1',
+    title: 'Wystawa kwiatów egzotycznych',
+    date: '25.06.2025',
+    category: 'Botanika',
+    location: 'Katowice',
+    favorite: true,
+  },
+  {
+    id: '2',
+    title: 'Maraton Horrorów',
+    date: '25.07.2025',
+    category: 'Film',
+    location: 'Sosnowiec',
+    favorite: true,
+  },
+  {
+    id: '3',
+    title: 'Grubson',
+    date: '25.08.2025',
+    category: 'Muzyka',
+    location: 'Katowice',
+    favorite: true,
+  },
+  {
+    id: '4',
+    title: 'Legia vs Ruch',
+    date: '25.05.2026',
+    category: 'Sport',
+    location: 'Chorzów',
+    favorite: false,
+    popular: true,
+  },
+  {
+    id: '5',
+    title: 'Laboratoria',
+    date: '25.10.2025',
+    category: 'Nauka',
+    location: 'Dąbrowa Górnicza',
+    favorite: false,
+  },
+];
