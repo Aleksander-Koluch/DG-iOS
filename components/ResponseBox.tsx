@@ -1,7 +1,5 @@
-// components/ResponseBox.tsx
-
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 type Props = {
   response: string;
@@ -19,7 +17,7 @@ export function ResponseBox({ response }: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#e4ffe5",
+    backgroundColor: '#e4ffe5',
     borderRadius: 14,
     padding: 16,
     marginBottom: 20,
@@ -27,12 +25,12 @@ const styles = StyleSheet.create({
 
   title: {
     fontSize: 16,
-    fontWeight: "700",
+    fontWeight: '700',
     marginBottom: 8,
-    color: "#2e7d32",
+    color: '#2e7d32',
   },
 
   response: {
-    color: "#1b5e20",
+    color: '#1b5e20',
   },
 });

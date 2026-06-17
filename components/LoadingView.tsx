@@ -1,7 +1,5 @@
-// components/LoadingView.tsx
-
-import React from "react";
-import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 export function LoadingView() {
   return (
@@ -16,7 +14,7 @@ export function LoadingView() {
 const styles = StyleSheet.create({
   container: {
     paddingVertical: 40,
-    alignItems: "center",
+    alignItems: 'center',
   },
 
   text: {
